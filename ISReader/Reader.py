@@ -98,16 +98,16 @@ class Reader:
                     except Exception as ex:
                         pass
                 elif (response.status == 400):
-                    json_err = None
                     try:
                         json_err = json.loads(response_body)
-                    except Exception as ex:
-                        pass
-                    if json_err != None:
                         if json_err["message"]["error"]["type"]:
                             self.console_message(json_err["message"]["error"]["message"])
-                elif (response.status == 401 or response.status == 403):
-                    self.console_message("ERROR: unauthorized access_key: " + self.access_key)
+                    except Exception as ex:
+                        self.console_message("ERROR: Bad Request")
+                elif response.status == 401:
+                    self.console_message("ERROR: Unauthorized")
+                elif response.status == 403:
+                    self.console_message("ERROR: Forbidden")
                 elif (response.status == 429):
                     if "Retry-After" in response.msg:
                         retry_after = response.msg["Retry-After"]
