@@ -1,0 +1,6 @@
+[isreader.client_config]
+access_key: example_key
+bucket_key example_bucket
+
+[isreader.api_config]
+api_base: https://api.init.st
