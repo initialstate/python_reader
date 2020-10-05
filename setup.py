@@ -22,7 +22,7 @@ setup(
 
 	author = "Initial State Technologies",
 	author_email = "support@initialstate.com",
-	description = ("A python module to simplify the process of reading data from Initial State's platform"),
+	description = ("Read data from the Initial State IoT platform"),
 	license = "MIT",
 	keywords = "logger,logstream,initial state",
 	url = "https://www.initialstate.com",
