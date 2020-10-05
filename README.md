@@ -2,6 +2,8 @@ Python Data Reader
 ===============
 This is a Python module currently built for python >= 2.7
 
+See the documentation for the [Initial State Read API](https://initialstatereadapi.docs.apiary.io/).
+
 ## Installation
 
 ### Using the automated script
@@ -12,7 +14,7 @@ On a Unix based system: (including Raspberry Pi, Mac OS X, Ubuntu)
 \curl -sSL https://get.initialstate.com/python-reader -o - | sudo bash
 ```
 
-If you don't have `curl` you should get it
+If you don't have `curl` you should get it:
 
 ```
 sudo apt-get install curl
