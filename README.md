@@ -1,5 +1,8 @@
 Python Data Reader
 ===============
+
+![repo linter workflow](https://github.com/initialstate/python_reader/actions/workflows/is-repo-lint.yml/badge.svg)
+
 This is a Python module currently built for python >= 2.7
 
 See the documentation for the [Initial State Read API](https://initialstatereadapi.docs.apiary.io/).
